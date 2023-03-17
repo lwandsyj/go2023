@@ -1,4 +1,4 @@
-1. any 是任意类型，any 是 interface{} 的别名
+1. any 是任意类型，any 是 interface{} 的别名,是go1.18 以后开始加的
 
         type any interface{}
 
