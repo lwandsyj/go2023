@@ -2,6 +2,8 @@
 
         type any interface{}
 
+   > any 是 interface{} 的别名，在所有方面都等同于 interface{}。
+
 2. 声明为any 类型的变量，可以赋值任意类型的值
 
         var a any
