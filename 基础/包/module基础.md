@@ -33,6 +33,8 @@
 
 + 在main.go 中调用mypackage 中的方法
 
-   
+   通过module 名称/package名称
+
+   ![image](../../assets/132.jpg)
 
    
