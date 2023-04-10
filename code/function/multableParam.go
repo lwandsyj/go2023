@@ -5,7 +5,6 @@ import "fmt"
 func add(args ...int) {
 	// 在函数体内部，可变参数是一个slice
 	count := len(args)
-
 	if count == 0 {
 		fmt.Println("没有参数")
 		return
@@ -24,4 +23,8 @@ func main() {
 	add(1, 2, 3)
 	println()
 	add(9, 8, 7, 6, 5)
+	// 使用数组或slice
+	a := []int{23, 25, 27, 28}
+	// 解构
+	add(a...)
 }

@@ -38,5 +38,15 @@ func WriteFilePathNotExist() {
 	fmt.Println("write success")
 }
 func main() {
-	WriteFilePathNotExist()
+	// 文件路径
+	filePath := "./upload/c.txt"
+	// 要写入的文件内容
+	content := "golang is small"
+	// 文件路径
+	// 要写入的文件内容
+	// 文件不存在时，创建文件的权限
+	err := os.WriteFile(filePath, []byte(content), 0666)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
